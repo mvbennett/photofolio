@@ -4,7 +4,7 @@ import Gallery from "./Gallery";
 
 const App = () => {
   const [selectedImg, setSelectedImg] = useState();
-  const [photoCardClass, setPhotoCardClass] = useState('sm-photo-card');
+  const [photoCardClass, setPhotoCardClass] = useState('photo-li');
   return (
     <div className="container">
       <Gallery

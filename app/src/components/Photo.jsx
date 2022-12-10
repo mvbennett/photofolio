@@ -10,14 +10,14 @@ const Photo = (
     setSelectedImg(img);
   };
   return (
-    <div className={photoCardClass}>
+    <li className={photoCardClass}>
       <img
         src={imgUrl}
         alt=""
         className="sm-photo"
         onClick={handleClick}
       />
-    </div>
+    </li>
   );
 };
 

@@ -11,7 +11,7 @@ const Gallery = (
   const photosArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
   return (
     <div className="full-gallery">
-      <div className="gallery">
+      <ul className="gallery-ul">
         {
           photosArray.map((img) => {
             let component;
@@ -40,7 +40,7 @@ const Gallery = (
             return component;
           })
         }
-      </div>
+      </ul>
       {/* <div className="full-div">
         {
           selectedImg && (<FullPhoto img={selectedImg} />)
