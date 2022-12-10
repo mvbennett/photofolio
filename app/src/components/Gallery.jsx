@@ -8,7 +8,7 @@ const Gallery = (
     selectedImg, setSelectedImg, photoCardClass, setPhotoCardClass
   }
 ) => {
-  const photosArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const photosArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
   return (
     <div className="full-gallery">
       <ul className="gallery-ul">
