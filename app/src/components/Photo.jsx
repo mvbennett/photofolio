@@ -9,12 +9,19 @@ const Photo = (
   const handleClick = () => {
     setSelectedImg(img);
   };
+  const info = new Image();
+  info.src = imgUrl;
+  info.onload = () => {
+    console.log(info.width);
+    console.log(info.height);
+  };
+  const orientation = info.width >= info.height ? 'landscape' : 'portrait';
   return (
     <li className={photoCardClass}>
       <img
         src={imgUrl}
         alt=""
-        className="sm-photo"
+        className={`${orientation} sm-photo-card`}
         onClick={handleClick}
       />
     </li>
